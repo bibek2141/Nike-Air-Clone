@@ -1,0 +1,126 @@
+
+
+html{
+  font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*Public/index.html*/
+#root{
+  height: 100%;
+}
+
+/* Layout */
+.grid-container{
+  display: grid;
+  grid-template-areas:
+  'header'
+  'main'
+  'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows:5rem 1fr 5rem;
+  height: 100%;
+}
+
+header{
+  grid-area: header;
+  background-color: #ffffff;
+  color:#000;
+}
+header a{
+  padding: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color:#000;
+}
+/* Logo : nikey */
+a.logo:hover{
+  cursor:pointer;
+  font-weight:500;
+}
+
+.logoFit {
+  padding-left: 20px;
+}
+
+/* Resize images */
+.logoFit img {
+  width: 30px; 
+  height: 30px; 
+  display: block; 
+}
+
+main{
+  grid-area: 1rem;
+  padding: 1rem;
+}
+
+footer{
+  grid-area: footer;
+  background-color: #ffffff;
+  color:#000;
+}
+
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.row.center{
+  justify-content: center;
+}
+
+/*Image*/
+img{
+  border-radius: 0.5rem;
+}
+
+img.medium{
+  max-width: 29rem;
+  width: 100%;
+}
+
+.card{
+  border: 0.1rem rgb(245,245,245) none;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin:1rem;
+}
+
+.card-body{
+  font-size: 14px;
+  padding:1rem;
+}
+
+.card-body > *{
+  margin-bottom: 0.5rem;
+}
+
+.product-title{
+  padding-top:2px;
+  font-size:14px;
+  color: rgb(17,17,17);
+}
+
+.gender{
+  color: rgb(117,117,117);
+  font-size: 10px;
+}
+
+.price{
+  font-size: 14px;
+}
