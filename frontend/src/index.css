@@ -94,6 +94,11 @@ img.medium{
   width: 100%;
 }
 
+img.large{
+  width:100%;
+  padding-left:2.5rem;
+}
+
 .card{
   border: 0.1rem rgb(245,245,245) none;
   background-color: #f8f8f8;
@@ -123,4 +128,87 @@ img.medium{
 
 .price{
   font-size: 14px;
+}
+
+
+/*Products Section*/
+.row.top{
+  align-items: flex-start;
+}
+
+ul{
+  padding:0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li{
+  margin-top:1rem;
+}
+
+/*Return */
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+  width:40px;
+}
+
+.round {
+  border-radius: 50%;
+}
+
+/*button Add to bag*/
+.btn-primary-dark{
+  width: 100%;
+  padding: 18px 18px;
+  border-color:#000;
+  border-radius: 30px;
+  background-color: #000;
+  font-size: 1.6rem;
+  color:white;
+  cursor:pointer;
+}
+
+.btn-primary-dark:hover{
+  border-color:white;
+}
+
+/*Alert*/
+.success{
+  color: #008000;
+}
+
+.error{
+  color: #ff0000;
+}
+
+.category,.priceProduct{
+  color: grey;
+  width:50%;
+}
+
+.priceProduct{
+  justify-content: flex-end;
+}
+
+.categoryPrice{
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.alert{
+  padding:1rem;
+  border:0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.alert-info{
+  color:#2020a0;
+  background-color: #e0e0ff;
+}
+
+.alert-danger{
+  color:#a02020;
+  background-color: #ffe0e0e0;
 }
